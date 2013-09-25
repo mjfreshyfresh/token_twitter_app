@@ -1,0 +1,3 @@
+<p>
+Sign in to <%= APP_NAME %>.
+</p>
