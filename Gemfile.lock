@@ -45,6 +45,7 @@ GEM
       dm-core (~> 1.2.0)
     do_postgres (0.10.13)
       data_objects (= 0.10.13)
+    dotenv (0.9.0)
     erubis (2.7.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
@@ -92,6 +93,7 @@ DEPENDENCIES
   dm-timestamps (= 1.2.0)
   dm-types (= 1.2.0)
   dm-validations (= 1.2.0)
+  dotenv
   erubis (= 2.7.0)
   omniauth!
   omniauth-twitter

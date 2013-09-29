@@ -1,3 +1,1 @@
-<p>
-Sign in to <%= APP_NAME %>.
-</p>
+Sign in to <%= ENV['APP_NAME'] %>.

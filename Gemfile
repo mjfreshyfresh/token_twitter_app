@@ -18,3 +18,5 @@ gem 'erubis',              '2.7.0'
 gem 'sinatra',             '1.2.6', :require => 'sinatra/base'
 gem 'sinatra-namespace',   '0.6.1', :require => 'sinatra/namespace'
 gem 'sinatra-flash',       '0.3.0', :require => 'sinatra/flash'
+
+gem 'dotenv'

@@ -8,16 +8,12 @@ Setup
 
 In the [Twitter Developers Portal](https://dev.twitter.com) you need to create an app and get the credentials required.
 
-Create a secrets.rb file and fill it with the following content which you received via the Twitter Developer Portal
+Create a .env file for local development and fill it with the following content which you received via the Twitter Developer Portal. Deploying on Heroku you'll need to follow the [directions for config-vars](https://devcenter.heroku.com/articles/config-vars)
 
-	APP_NAME = 'Nameless APP'
-	DEV_DB_NAME = 'somedb'	
-	BASE_URL = 'https://yourappnamehere.herokuapp.com'
-	TWITTER_BASE_URL = 'https://api.twitter.com'
-	REGISTERED_REDIRECT_URI = BASE_URL + 'oauth2/callback'
-
-	CONSUMER_KEY = '3.141592653589793238462643'
-	CONSUMER_SECRET = '3.141592653589793238462643'
+	APP_NAME =My Token Twitter App
+	BASE_URL =https://myapp.herokuapp.com
+	CONSUMER_KEY=gI12312jkfldfjsldkfjksdf
+	CONSUMER_SECRET=dI12312jkfldfjsldkfjksdf
 
 
 Basic Usage
@@ -30,6 +26,7 @@ TODO
 ----
 
 * Encrypt user data via https://github.com/attr-encrypted/attr_encrypted
+* Require auth to view the /tokens route
 
 
 LICENSE
