@@ -1,7 +1,7 @@
 class Token
     
   include DataMapper::Resource
-  #validates_uniqueness_of :token
+  validates_uniqueness_of :token
 
   property :id, Serial
   property :token, Text    
