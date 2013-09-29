@@ -14,7 +14,11 @@ Create a .env file for local development and fill it with the following content 
 	BASE_URL =https://myapp.herokuapp.com
 	CONSUMER_KEY=gI12312jkfldfjsldkfjksdf
 	CONSUMER_SECRET=dI12312jkfldfjsldkfjksdf
+	
+Some handy heroku commands:
 
+	heroku config:set  APP_NAME=TokenApp
+ 	heroku addons:add heroku-postgresql:dev
 
 Basic Usage
 -----------
