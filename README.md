@@ -14,6 +14,7 @@ Create a .env file for local development and fill it with the following content 
 	BASE_URL =https://myapp.herokuapp.com
 	CONSUMER_KEY=gI12312jkfldfjsldkfjksdf
 	CONSUMER_SECRET=dI12312jkfldfjsldkfjksdf
+	MY_TOKEN_KEY=sdfomerewsdfdsrser
 	
 Some handy heroku commands:
 

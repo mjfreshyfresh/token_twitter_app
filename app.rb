@@ -11,12 +11,15 @@ get '/auth/twitter/callback' do
 end
 
 
-# TODO: Wrap this w/some security
-get '/mytokens' do
-  tokens = Token.all
-  s = "Tokens: #{tokens.size}<br>"
-  tokens.each do | token |
-    s << "Token.create :token=>'#{token.token}', :secret=> '#{token.secret}'<br>"    
+# TODO: Improve this
+get '/mytokens/:mytokenkey' do
+  s = 'Tokens<br>'
+  if ENV['MY_TOKEN_KEY'] == params[:mytokenkey]
+    tokens = Token.all
+    s << "Tokens: #{tokens.size}<br>"
+    tokens.each do | token |
+      s << "Token.create :token=>'#{token.token}', :secret=> '#{token.secret}'<br>"    
+    end
   end
   s
 end
