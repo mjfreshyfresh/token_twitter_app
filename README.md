@@ -19,6 +19,7 @@ Some handy heroku commands:
 
 	heroku config:set  APP_NAME=TokenApp
  	heroku addons:add heroku-postgresql:dev
+	heroku git:remote -a falling-wind-1624
 
 Make sure the correct db config is used in the config.ru HEROKU_POSTGRESQL_MAROON_URL 
 
