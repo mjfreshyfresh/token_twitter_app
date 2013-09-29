@@ -20,6 +20,8 @@ Some handy heroku commands:
 	heroku config:set  APP_NAME=TokenApp
  	heroku addons:add heroku-postgresql:dev
 
+Make sure the correct db config is used in the config.ru HEROKU_POSTGRESQL_MAROON_URL 
+
 Basic Usage
 -----------
 
