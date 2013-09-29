@@ -12,11 +12,11 @@ end
 
 
 # TODO: Wrap this w/some security
-# get '/mytokens' do
-#   tokens = Token.all
-#   s = "Tokens: #{tokens.size}<br>"
-#   tokens.each do | token |
-#     s << "Token.create :token=>'#{token.token}', :secret=> '#{token.secret}'<br>"    
-#   end
-#   s
-# end
+get '/mytokens' do
+  tokens = Token.all
+  s = "Tokens: #{tokens.size}<br>"
+  tokens.each do | token |
+    s << "Token.create :token=>'#{token.token}', :secret=> '#{token.secret}'<br>"    
+  end
+  s
+end
